@@ -20,25 +20,24 @@ This repository serves as a centralized toolkit for System Administration and Ne
 
 | Category | Tool Name | Description | Stack |
 | :--- | :--- | :--- | :--- |
-| **Security** | `Context-Firewall-Block` | **[Highlight]** Adds "Block/Allow Network" options directly to the Windows right-click context menu for `.exe` files. | Python, Registry |
+| **Security** | `Context-Firewall-Block` | **[Highlight]** Adds "Block/Allow Exe" options directly to the Windows right-click context menu for files. | Registry, Powershell |
 | **Network** | `Subnet-Calc-CLI` | *In Progress.* A CLI tool for calculating network IDs, broadcast addresses, and usable host ranges (CIDR). | Python |
 | **Monitor** | `Clinical-Uptime` | *Planned.* A latency and packet-loss monitor designed for high-availability healthcare environments. | Python |
-| **Utils** | `Log-Rotator` | Simple utility for archiving and clearing local log files. | Bash/Python |
+| **Utils** | `Log-Rotator` | *Planned.* Simple utility for archiving and clearing local log files. | Bash/Python |
 
 ---
 
 ### ⭐ Featured Tool: Windows Firewall Context Integration
-*(Located in `/endpoint_security/firewall_context/`)*
+*(Located in `./Security/context_firewall/`)*
 
-This project integrates Python with the Windows Registry (`regedit`) to streamline application blocking.
-* **Problem:** Blocking an application via `wf.msc` takes ~15 clicks and 45 seconds.
-* **Solution:** This tool adds a context menu item to block/allow traffic in 2 seconds.
-* **Key Tech:** Uses `ctypes` for privilege escalation and `subprocess` to drive `netsh` commands.
+This project uses Powershell and the Windows Registry (`regedit`) to streamline application blocking.
+* **Problem:** Completely blocking an application via `wf.msc` takes time.
+* **Solution:** This tool adds a context menu item to block/allow all traffic for a file in 2 seconds.
 
 ---
 
 ### 🛠️ Dependencies & Setup
-Most tools in this repository require **Python 3.x**.
+Some tools in this repository require **Python 3.x**.
 
 **Installation:**
 ```bash
