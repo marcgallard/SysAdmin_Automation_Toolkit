@@ -21,7 +21,7 @@ This repository serves as a centralized toolkit for System Administration and Ne
 | Category | Tool Name | Description | Stack |
 | :--- | :--- | :--- | :--- |
 | **Security** | `Context-Firewall-Block` | **[Highlight]** Adds "Block/Allow Exe" options directly to the Windows right-click context menu for files. | Registry, Powershell |
-| **Network** | `Subnet-Calc` | *In Progress.* A tool for calculating network IDs, broadcast addresses, and usable host ranges (CIDR). | Python |
+| **Network** | `Subnet-Calc` | A tool for calculating network address, broadcast address, and usable host ranges from CIDR notation and subnet mask. | Python |
 | **Monitor** | `Clinical-Uptime` | *Planned.* A latency and packet-loss monitor designed for high-availability healthcare environments. | Python |
 | **Utils** | `Log-Rotator` | *Planned.* Simple utility for archiving and clearing local log files. | Bash/Python |
 
