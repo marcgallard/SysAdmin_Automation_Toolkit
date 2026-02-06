@@ -21,7 +21,7 @@ This repository serves as a centralized toolkit for System Administration and Ne
 | Category | Tool Name | Description | Stack |
 | :--- | :--- | :--- | :--- |
 | **Security** | `Context-Firewall-Block` | **[Highlight]** Adds "Block/Allow Exe" options directly to the Windows right-click context menu for files. | Registry, Powershell |
-| **Network** | `Subnet-Calc-CLI` | *In Progress.* A CLI tool for calculating network IDs, broadcast addresses, and usable host ranges (CIDR). | Python |
+| **Network** | `Subnet-Calc` | *In Progress.* A tool for calculating network IDs, broadcast addresses, and usable host ranges (CIDR). | Python |
 | **Monitor** | `Clinical-Uptime` | *Planned.* A latency and packet-loss monitor designed for high-availability healthcare environments. | Python |
 | **Utils** | `Log-Rotator` | *Planned.* Simple utility for archiving and clearing local log files. | Bash/Python |
 
@@ -37,9 +37,8 @@ This project uses Powershell and the Windows Registry (`regedit`) to streamline 
 ---
 
 ### 🛠️ Dependencies & Setup
-Some tools in this repository require **Python 3.x**.
+Some tools in this repository require **Python 3.10+**.
 
 **Installation:**
 ```bash
-git clone [https://github.com/YourUsername/sysadmin-toolkit](https://github.com/YourUsername/sysadmin-toolkit)
-pip install -r requirements.txt
+git clone https://github.com/marcgallard/SysAdmin_Automation_Toolkit
